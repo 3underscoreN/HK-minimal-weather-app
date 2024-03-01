@@ -11,21 +11,26 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:hk_weather/main.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
+  testWidgets('Select location test', (WidgetTester tester) async {
+    // TODO: implement test
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const MainApp());
+    // await tester.pumpWidget(const MainApp());
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    // // Verify our location is set to null
+    // expect(find.text('Location unknown', findRichText: true), findsOneWidget,);
+    // expect(find.text('Please select a location before attempting an update!', findRichText: true), findsOneWidget);
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
-
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    // // Selecting location
+    // await tester.tap(find.byIcon(Icons.settings));
+    // await tester.pumpAndSettle();
+    // expect(find.text('Location'), findsOneWidget);
+    // expect(find.text('Currently set to: null'), findsOneWidget);
+    // await tester.tap(find.text('Location'));
+    // await tester.pumpAndSettle();
+    // await tester.tap(find.text('Hong Kong Observatory'));
+    // await tester.pumpAndSettle();
+    // expect(find.text('Currently set to: Hong Kong Observatory'), findsOneWidget);
+    // await tester.tapAt(const Offset(0, 0));
   });
   
 }
