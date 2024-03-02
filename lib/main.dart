@@ -221,16 +221,16 @@ class _MyHomePageState extends ConsumerState<MyHomePage> {
                   padding: const EdgeInsets.all(8.0),
                   child: const Divider(),
                 ),
-                Container(
-                  padding: const EdgeInsets.all(8.0),
-                  child: const Text(
-                    'Rainfall',
-                    style: TextStyle(
-                      fontSize: 25.0,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
+                // Container(
+                //   padding: const EdgeInsets.all(8.0),
+                //   child: const Text(
+                //     'Rainfall',
+                //     style: TextStyle(
+                //       fontSize: 25.0,
+                //       fontWeight: FontWeight.bold,
+                //     ),
+                //   ),
+                // ),
                 Container(
                   padding: const EdgeInsets.all(8.0),
                   child: Card(
