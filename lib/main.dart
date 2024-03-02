@@ -88,13 +88,13 @@ class _MyHomePageState extends ConsumerState<MyHomePage> {
         slivers: [
           SliverAppBar(
             title: const Text('Hong Kong Weather'),
-            leading: IconButton(
-              icon: const Icon(Icons.refresh),
-              onPressed: () async {
-                await updateWeatherData();
-                setState(() {});
-              },
-            ),
+            // leading: IconButton(
+            //   icon: const Icon(Icons.refresh),
+            //   onPressed: () async {
+            //     await updateWeatherData();
+            //     setState(() {});
+            //   },
+            // ), // needed for testing purposes on web since somehow web does not support pull to refresh
             floating: true,
             pinned: true,
             stretch: true,
